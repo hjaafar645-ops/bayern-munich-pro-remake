@@ -1,0 +1,1068 @@
+/* Start-Gallery-Section */
+
+.gallery-section {
+    background: var(--dark-black);
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.gallery-title {
+    padding-top: 220px;
+    padding-left: 190px;
+}
+
+.gallery-title h2 i {
+    font-size: 45px;
+    color: var(--white);
+}
+
+.gallery-title:after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 2px;
+    background: var(--primary-red);
+    margin-top: 20px; 
+}
+
+/* Gallery */
+/* Hero */
+
+.hero-img-team {
+    position: relative;
+    max-width: 1300px;
+    margin: 60px auto 0 auto;
+}
+
+.hero-img-team img {
+    display: block;
+    width: 100%;
+    height: 650px;
+    margin: 20px auto 0 auto;
+    object-fit: cover;
+    filter: brightness(0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8), 0 1px 10px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+}
+
+.team-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: var(--light-gray);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-image: fill 0 linear-gradient(#0001,#000);
+}
+
+.team-overlay h4 {
+    font-size: 30px;
+}
+
+.team-overlay h4 span {
+    color: var(--primary-red);
+}
+
+.team-overlay p {
+    font-size: 20px;
+}
+
+.team-overlay p span {
+    color: var(--primary-red);
+}
+
+.hero-img-team:hover .team-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    transform: translateY(-60px);
+    transition: transform 0.4s ease;
+}
+
+.hero-img-team:hover .overlay-text {
+    transform: translateY(0);
+}
+
+
+/* Gallery-Option */
+
+.gallery-option {
+    margin: 150px 0;
+}
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.gallery-list li button {
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background: var(--light-gray);
+    color: var(--primary-red);
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+.gallery-list li:first-child button {
+    background: var(--primary-red);
+    color: var(--light-gray);
+}
+
+.gallery-list li:not(:first-child) button:hover {
+    background: var(--primary-red);
+    color: var(--light-gray);
+    transform: translateY(-8px);
+}
+
+
+/* Players-Legends-Moments-Cards */
+
+
+/* Players-Squad */
+
+.players-squad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    row-gap: 50px;
+}
+
+.players-squad-cards {
+    position: relative;
+}
+
+.first-images-title {
+    padding-left: 43px;
+}
+
+.first-images-title h3 {
+    color: var(--white);
+    font-size: 22px;
+    margin-top: 30px;
+    background: var(--primary-red);
+    padding: 7px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.players-squad-cards .squad-image {
+    display: flex;
+    width: 85%;
+    height: 380px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8), 0 1px 10px rgba(0, 0, 0, .8);
+}
+
+.squad-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 85%;
+    height: 380px;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.players-squad-cards:hover .squad-overlay {
+    opacity: 1;
+}
+
+.overlay-squad-text {
+    transform: translateY(-25px);
+    transition: transform 0.4s ease;
+    padding-left: 20px;
+    color: var(--white);
+}
+
+.squad-cards-name {
+    color: var(--primary-red);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.squad-cards-position,
+.squad-cards-value {
+    font-size: 18px;
+}
+
+.players-squad-cards:hover .overlay-squad-text {
+    transform: translateY(0);
+}
+
+
+/* Legends */
+
+.legends {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    row-gap: 50px;
+}
+
+.legends-cards {
+    position: relative;
+}
+
+.images-title {
+    padding-left: 43px;
+}
+
+.images-title h3 {
+    color: var(--white);
+    font-size: 22px;
+    margin-top: 200px;
+    background: var(--primary-red);
+    padding: 7px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.legends-img {
+    display: flex;
+    width: 85%;
+    height: 380px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8), 0 1px 10px rgba(0, 0, 0, .8);
+}
+
+.legends-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 85%;
+    height: 380px;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.legends-cards:hover .legends-overlay {
+    opacity: 1;
+}
+
+.legends-overlay-text {
+    transform: translateY(-25px);
+    transition: transform 0.4s ease;
+    padding-left: 20px;
+    color: var(--white);
+}
+
+.legends-cards-name {
+    color: var(--primary-red);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.legends-cards-years,
+.legends-cards-value {
+    font-size: 18px;
+}
+
+.legends-cards:hover .legends-overlay-text {
+    transform: translateY(0);
+}
+
+
+/* Allianz */
+
+.allianz {
+    margin-top: 30px;
+}
+
+.mySwiper2 img {
+    width: 95%;
+    height: 650px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Moments */
+
+.moments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    row-gap: 50px;
+}
+
+.moments-cards {
+    position: relative;
+}
+
+.moments-image {
+    display: flex;
+    width: 85%;
+    height: 380px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8), 0 1px 10px rgba(0, 0, 0, .8);
+}
+
+.moments-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    background: rgba(0, 0, 0, 0.7);
+    width: 85%;
+    height: 380px;
+    margin: auto;
+    border-radius: 10px;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.moments-cards:hover .moments-overlay {
+    opacity: 1;
+}
+
+.moments-overlay-text {
+    transform: translateY(-25px);
+    transition: transform 0.4s ease;
+    padding-left: 20px;
+    color: var(--white);
+}
+
+.moments-cards-name {
+    color: var(--primary-red);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.moments-cards-years {
+    font-size: 18px;
+}
+
+.moments-cards:hover .moments-overlay-text {
+    transform: translateY(0);
+}
+
+
+/* Scroll-Button */
+
+.scroll {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.scroll .top {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    background: var(--primary-red);
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 700;
+    animation: work 1.5s infinite forwards;
+}
+
+@keyframes work {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Media */
+
+@media (max-width:576px) {
+    .gallery-title {
+        padding-top: 160px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .gallery-title h2 i {
+        font-size: 30px;
+    }
+    .gallery-title:after {
+        width: 95px;
+        margin: 10px auto;
+    }
+    /* Hero */
+    .hero-img-team {
+        margin: 45px auto 0 auto;
+    }
+    .hero-img-team img {
+        width: 95%;
+        height: 230px;
+        margin: 20px auto 0 auto;
+    }
+    .team-overlay {
+        width: 95%;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .team-overlay h4 {
+        font-size: 20px;
+    }
+    .team-overlay p {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    /* Gallery-Option */
+    .gallery-option {
+        margin: 50px 0;
+    }
+    .gallery-list {
+        flex-direction: column;
+        gap: 20px;
+        margin-right: 25px;
+    }
+    .gallery-list li {
+        font-size: 16px;
+    }
+    .gallery-list li button {
+        padding: 4px 10px;
+    }
+    /* Players-Squad */
+    .players-squad {
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+    }
+    .first-images-title {
+        text-align: left;
+    }
+    .first-images-title h3 {
+        color: var(--primary-red);
+        font-size: 18px;
+        margin-top: 50px;
+        background: none;
+    }
+    .players-squad-cards .squad-image {
+        height: 250px;
+    }
+    .squad-overlay {
+        height: 250px;
+    }
+    .squad-cards-name {
+        font-size: 18px;
+    }
+    .squad-cards-position,
+    .squad-cards-value {
+        font-size: 14px;
+    }
+    /* Legends */
+    .legends {
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+    }
+    .images-title {
+        text-align: left;
+    }
+    .images-title h3 {
+        color: var(--primary-red);
+        font-size: 18px;
+        margin-top: 90px;
+        background: none;
+    }
+    .legends-img {
+        height: 250px;
+    }
+    .legends-overlay {
+        height: 250px;
+    }
+    .legends-cards-name {
+        color: var(--primary-red);
+        font-size: 18px;
+    }
+    .legends-cards-years,
+    .legends-cards-value {
+        font-size: 14px;
+    }
+    /* Allianz */
+    .allianz {
+        margin-top: 5px;
+    }
+    .mySwiper2 img {
+        width: 90%;
+        height: 300px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(0.7);
+    }
+    /* Moments */
+    .moments {
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+    }
+    .moments-image {
+        height: 250px;
+    }
+    .moments-overlay {
+        height: 250px;
+    }
+    .moments-cards-name {
+        font-size: 18px;
+    }
+    .moments-cards-years {
+        font-size: 14px;
+    }
+    .scroll .top {
+        font-size: 13px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .gallery-title {
+        padding-top: 170px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .gallery-title h2 i {
+        font-size: 32px;
+    }
+    .gallery-title:after {
+        width: 105px;
+        margin: 10px auto;
+    }
+    /* Hero */
+    .hero-img-team {
+        margin: 50px auto 0 auto;
+    }
+    .hero-img-team img {
+        width: 95%;
+        height: 350px;
+    }
+    .team-overlay {
+        width: 95%;
+        margin: auto;
+    }
+    .team-overlay h4 {
+        font-size: 22px;
+    }
+    .team-overlay p {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    /* Gallery-Option */
+    .gallery-option {
+        margin: 50px 0;
+    }
+    .gallery-list {
+        margin-right: 25px;
+    }
+    .gallery-list li {
+        font-size: 15px;
+        padding: 0 8px;
+        margin: 60px 0 30px 0;
+    }
+    .gallery-list li button {
+        padding: 4px 10px;
+    }
+    /* Players-Squad */
+    .players-squad {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4px;
+    }
+    .first-images-title {
+        text-align: left;
+    }
+    .first-images-title h3 {
+        color: var(--primary-red);
+        font-size: 20px;
+        margin-top: 50px;
+        background: none;
+    }
+    .players-squad-cards .squad-image {
+        height: 320px;
+    }
+    .squad-overlay {
+        height: 320px;
+    }
+    .squad-cards-name {
+        font-size: 18px;
+    }
+    .squad-cards-position,
+    .squad-cards-value {
+        font-size: 15px;
+    }
+    /* Legends */
+    .legends {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4px;
+    }
+    .images-title {
+        text-align: left;
+    }
+    .images-title h3 {
+        color: var(--primary-red);
+        font-size: 20px;
+        margin-top: 150px;
+        background: none;
+    }
+    .legends-img {
+        height: 320px;
+    }
+    .legends-overlay {
+        height: 320px;
+    }
+    .legends-cards-name {
+        font-size: 18px;
+    }
+    .legends-cards-years,
+    .legends-cards-value {
+        font-size: 15px;
+    }
+    /* Allianz */
+    .allianz {
+        margin-top: 5px;
+    }
+    .mySwiper2 img {
+        width: 90%;
+        height: 450px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(0.7);
+    }
+    /* Moments */
+    .moments {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5px;
+    }
+    .moments-image {
+        height: 320px;
+    }
+    .moments-overlay {
+        height: 320px;
+    }
+    .moments-cards-name {
+        font-size: 18px;
+    }
+    .moments-cards-years {
+        font-size: 15px;
+    }
+    .scroll .top {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:767px) and (max-width:991px) {
+    .gallery-title {
+        padding-top: 180px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .gallery-title h2 i {
+        font-size: 35px;
+    }
+    .gallery-title:after {
+        width: 115px;
+        margin: 10px auto;
+    }
+    /* Hero */
+    .hero-img-team {
+        margin: 60px auto 0 auto;
+    }
+    .hero-img-team img {
+        width: 95%;
+        height: 400px;
+    }
+    .team-overlay {
+        width: 95%;
+        margin: auto;
+    }
+    .team-overlay h4 {
+        font-size: 24px;
+    }
+    .team-overlay p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    /* Gallery-Option */
+    .gallery-option {
+        margin: 50px 0;
+    }
+    .gallery-list {
+        margin-right: 25px;
+    }
+    .gallery-list li {
+        font-size: 18px;
+        padding: 0 8px;
+        margin: 60px 0 30px 0;
+    }
+    .gallery-list li button {
+        padding: 4px 10px;
+    }
+    /* Players-Squad */
+    .players-squad {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4px;
+    }
+    .first-images-title {
+        text-align: left;
+    }
+    .first-images-title h3 {
+        color: var(--primary-red);
+        font-size: 20px;
+        margin-top: 50px;
+        background: none;
+    }
+    .players-squad-cards .squad-image {
+        height: 350px;
+    }
+    .squad-overlay {
+        height: 350px;
+    }
+    .squad-cards-name {
+        font-size: 20px;
+    }
+    .squad-cards-position,
+    .squad-cards-value {
+        font-size: 17px;
+    }
+    /* Legends */
+    .legends {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4px;
+    }
+    .images-title {
+        text-align: left;
+    }
+    .images-title h3 {
+        color: var(--primary-red);
+        font-size: 20px;
+        margin-top: 150px;
+        background: none;
+    }
+    .legends-img {
+        height: 350px;
+    }
+    .legends-overlay {
+        height: 350px;
+    }
+    .legends-cards-name {
+        font-size: 20px;
+    }
+    .legends-cards-years,
+    .legends-cards-value {
+        font-size: 17px;
+    }
+    /* Allianz */
+    .allianz {
+        margin-top: 5px;
+    }
+    .mySwiper2 img {
+        width: 90%;
+        height: 500px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(0.8);
+    }
+    /* Moments */
+    .moments {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5px;
+    }
+    .moments-image {
+        height: 350px;
+    }
+    .moments-overlay {
+        height: 350px;
+    }
+    .moments-cards-name {
+        font-size: 20px;
+    }
+    .moments-cards-years {
+        font-size: 17px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .gallery-title {
+        padding-top: 220px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .gallery-title h2 i {
+        font-size: 38px;
+    }
+    .gallery-title:after {
+        width: 122px;
+        margin: 12px auto;
+    }
+    /* Hero */
+    .hero-img-team {
+        margin: 70px auto 0 auto;
+    }
+    .hero-img-team img {
+        width: 95%;
+        height: 500px;
+    }
+    .team-overlay {
+        width: 95%;
+        margin: auto;
+    }
+    .team-overlay h4 {
+        font-size: 26px;
+    }
+    .team-overlay p {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    /* Gallery-Option */
+    .gallery-option {
+        margin: 50px 0;
+    }
+    .gallery-list {
+        margin-right: 25px;
+    }
+    .gallery-list li {
+        font-size: 20px;
+        padding: 0 8px;
+        margin: 60px 0 30px 0;
+    }
+    .gallery-list li button {
+        padding: 4px 10px;
+    }
+    /* Players-Squad */
+    .players-squad {
+        margin-top: 5px;
+    }
+    .first-images-title {
+        text-align: left;
+    }
+    .first-images-title h3 {
+        color: var(--primary-red);
+        font-size: 24px;
+        margin-top: 50px;
+        background: none;
+    }
+    .players-squad-cards .squad-image {
+        height: 320px;
+    }
+    .squad-overlay {
+        height: 320px;
+    }
+    .squad-cards-name {
+        font-size: 20px;
+    }
+    .squad-cards-position,
+    .squad-cards-value {
+        font-size: 17px;
+    }
+    /* Legends */
+    .legends {
+        margin-top: 5px;
+    }
+    .images-title {
+        text-align: left;
+    }
+    .images-title h3 {
+        color: var(--primary-red);
+        font-size: 24px;
+        margin-top: 150px;
+        background: none;
+    }
+    .legends-img {
+        height: 320px;
+    }
+    .legends-overlay {
+        height: 320px;
+    }
+    .legends-cards-name {
+        font-size: 20px;
+    }
+    .legends-cards-years,
+    .legends-cards-value {
+        font-size: 17px;
+    }
+    /* Allianz */
+    .allianz {
+        margin-top: 5px;
+    }
+    .mySwiper2 img {
+        width: 90%;
+        height: 500px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(0.8);
+    }
+    /* Moments */
+    .moments {
+        margin-top: 5px;
+    }
+    .moments-image {
+        height: 320px;
+    }
+    .moments-overlay {
+        height: 320px;
+    }
+    .moments-cards-name {
+        font-size: 20px;
+    }
+    .moments-cards-years {
+        font-size: 17px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .gallery-title {
+        padding-top: 220px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .gallery-title h2 i {
+        font-size: 40px;
+    }
+    .gallery-title:after {
+        width: 125px;
+        margin: 12px auto;
+    }
+    /* Hero */
+    .hero-img-team {
+        margin: 70px auto 0 auto;
+    }
+    .hero-img-team img {
+        width: 95%;
+        height: 580px;
+    }
+    .team-overlay {
+        width: 95%;
+        margin: auto;
+    }
+    .team-overlay h4 {
+        font-size: 26px;
+    }
+    .team-overlay p {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    /* Gallery-Option */
+    .gallery-option {
+        margin: 50px 0;
+    }
+    .gallery-list {
+        margin-right: 25px;
+    }
+    .gallery-list li {
+        font-size: 20px;
+        padding: 0 10px;
+        margin: 60px 0 30px 0;
+    }
+    .gallery-list li button {
+        padding: 4px 10px;
+    }
+    /* Players-Squad */
+    .players-squad {
+        margin-top: 5px;
+    }
+    .first-images-title {
+        padding-left: 33px;
+        margin-bottom: 15px;
+    }
+    .players-squad-cards .squad-image {
+        height: 340px;
+    }
+    .squad-overlay {
+        height: 340px;
+    }
+    .squad-cards-name {
+        font-size: 20px;
+    }
+    .squad-cards-position,
+    .squad-cards-value {
+        font-size: 17px;
+    }
+    /* Legends */
+    .legends {
+        margin-top: 5px;
+    }
+    .images-title {
+        padding-left: 35px;
+        margin-bottom: 15px;
+    }
+    .images-title h3 {
+        color: var(--white);
+        font-size: 22px;
+        background: var(--primary-red);
+        border-radius: 5px;
+    }
+    .legends-img {
+        height: 340px;
+    }
+    .legends-overlay {
+        height: 340px;
+    }
+    .legends-cards-name {
+        font-size: 20px;
+    }
+    .legends-cards-years,
+    .legends-cards-value {
+        font-size: 17px;
+    }
+    /* Allianz */
+    .allianz {
+        margin-top: 5px;
+    }
+    .mySwiper2 img {
+        width: 95%;
+        height: 550px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(0.9);
+    }
+    /* Moments */
+    .moments {
+        margin-top: 5px;
+    }
+    .moments-image {
+        height: 340px;
+    }
+    .moments-overlay {
+        height: 340px;
+    }
+    .moments-cards-name {
+        font-size: 20px;
+    }
+    .moments-cards-years {
+        font-size: 17px;
+    }
+}

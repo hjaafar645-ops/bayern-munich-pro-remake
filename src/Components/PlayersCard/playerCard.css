@@ -1,0 +1,584 @@
+/* Start-Team-Section*/
+
+.team-section {
+    background: -webkit-linear-gradient(90deg, var(--dark-red), var(--dark-black));
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.section-title {
+    padding-top: 300px;
+    text-align: center;
+}
+
+.section-title h2 i {
+    font-size: 45px;
+    color: var(--white);
+}
+
+.section-title .line {
+    display: block;
+    width: 330px;
+    height: 2px;
+    background: var(--primary-red);
+    margin: 15px auto 0 auto;
+}
+
+.section-title .down {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: var(--light-gray);
+    animation: toDown 1.4s ease infinite forwards;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@keyframes toDown {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10px);
+        opacity: 0.6;
+    }
+}
+
+
+/* Starters */
+
+.information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background-image: url(../../../public/Images/stadium1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+    border-radius: 20px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+
+.trainer {
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    padding: 10px;
+    background: var(--dark-black);
+    border-radius: 20px;
+}
+
+.kompany {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.trainer .name-trainer {
+    font-size: 18px;
+    margin-top: 7px;
+    color: var(--white);
+    text-align: center;
+}
+
+.player-card {
+    width: 200px;
+    text-align: center;
+    color: var(--light-gray);
+    border-radius: 10px;
+    background: var(--dark-black);
+    border: 1px solid var(--dark-black);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-card {
+    width: 100%;
+    height: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.name-card {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.position-card {
+    font-size: 22px;
+    background: var(--primary-red);
+    color: var(--light-gray);
+    font-weight: 600;
+}
+
+.number-card {
+    font-size: 22px;
+}
+
+.goalkeeper,
+.defenders,
+.midfielders,
+.forwards,
+.attackingMidfielders {
+    display: flex;
+    gap: 150px;
+}
+
+
+/* Substitutes */
+
+.player-sub-card {
+    width: 200px;
+    text-align: center;
+    color: var(--light-gray);
+    border-radius: 10px;
+    background: var(--dark-black);
+    border: 2px solid var(--dark-black);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+}
+
+.img-sub-card {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.name-sub-card {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.position-sub-card {
+    font-size: 22px;
+    background: var(--primary-blue);
+    color: var(--light-gray);
+    font-weight: 600;
+    box-shadow: 0 0 3px 1px #727171 inset;
+}
+
+.number-sub-card {
+    font-size: 22px;
+}
+
+@media (max-width:576px) {
+    .section-title {
+        padding-top: 210px;
+        text-align: center;
+    }
+    .section-title h2 i {
+        font-size: 30px;
+    }
+    .section-title .line {
+        width: 210px;
+        margin: 10px auto 0 auto;
+    }
+    .section-title .down {
+        font-size: 30px;
+        color: var(--white);
+    }
+    .information {
+        width: 100%;
+        padding: 70px 0;
+        border-radius: 0;
+        margin-top: 100px;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .trainer {
+        position: absolute;
+        left: 10px;
+        top: -50px;
+        padding: 5px;
+        background: var(--dark-black);
+        border-radius: 20px;
+    }
+    .kompany {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 65px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .trainer .name-trainer {
+        font-size: 10px;
+        margin-top: 7px;
+        color: var(--white);
+        text-align: center;
+    }
+    .player-card {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    .img-card {
+        width: 100%;
+        max-height: 40px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .name-card {
+        display: none;
+    }
+    .position-card {
+        display: none;
+    }
+    .number-card {
+        font-size: 19px;
+    }
+    .goalkeeper,
+    .defenders,
+    .forwards {
+        gap: 10px;
+    }
+    .midfielders {
+        gap: 30px;
+    }
+    .attackingMidfielders {
+        gap: 40px;
+    }
+    .name-sub-card {
+        font-size: 18px;
+    }
+    .img-sub-card {
+        height: 130px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .position-sub-card {
+        font-size: 18px;
+    }
+    .number-sub-card {
+        font-size: 18px;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .section-title {
+        padding-top: 210px;
+        text-align: center;
+    }
+    .section-title h2 i {
+        font-size: 32px;
+    }
+    .section-title .line {
+        width: 230px;
+        margin: 10px auto 0 auto;
+    }
+    .section-title .down {
+        font-size: 38px;
+    }
+    .information {
+        width: 100%;
+        padding: 70px 0;
+        border-radius: 0;
+        margin-top: 100px;
+        gap: 30px;
+    }
+    .trainer {
+        position: absolute;
+        left: 50px;
+        top: -60px;
+        padding: 5px;
+        background: var(--dark-black);
+        border-radius: 20px;
+    }
+    .kompany {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .trainer .name-trainer {
+        font-size: 12px;
+        margin-top: 7px;
+        color: var(--white);
+        text-align: center;
+    }
+    .player-card {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    .player-card:hover {
+        box-shadow: 0 0 5px 1px var(--primary-red);
+    }
+    .img-card {
+        width: 100%;
+        max-height: 60px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+    .name-card {
+        font-size: 11px;
+    }
+    .position-card {
+        display: none;
+    }
+    .number-card {
+        display: none;
+    }
+    .goalkeeper,
+    .defenders,
+    .forwards {
+        gap: 10px;
+    }
+    .midfielders {
+        gap: 30px;
+    }
+    .attackingMidfielders {
+        gap: 40px;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+    .img-sub-card {
+        height: 170px;
+    }
+}
+
+@media (min-width:767px) and (max-width:991px) {
+    .section-title {
+        padding-top: 220px;
+        text-align: center;
+    }
+    .section-title h2 i {
+        font-size: 35px;
+    }
+    .section-title .line {
+        width: 250px;
+        margin: 10px auto 0 auto;
+    }
+    .section-title .down {
+        font-size: 40px;
+    }
+    .information {
+        width: 100%;
+        padding: 70px 0;
+        border-radius: 0;
+        margin-top: 100px;
+        gap: 30px;
+    }
+    .trainer {
+        position: absolute;
+        left: 50px;
+        top: -60px;
+        padding: 5px;
+        background: var(--dark-black);
+        border-radius: 20px;
+    }
+    .kompany {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 100px;
+    }
+    .trainer .name-trainer {
+        font-size: 12px;
+        margin-top: 7px;
+        color: var(--white);
+        text-align: center;
+    }
+    .player-card {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    .player-card:hover {
+        box-shadow: 0 0 5px 1px var(--primary-red);
+    }
+    .img-card {
+        width: 100%;
+        max-height: 80px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+    .name-card {
+        font-size: 14px;
+    }
+    .position-card {
+        display: none;
+    }
+    .number-card {
+        display: none;
+    }
+    .goalkeeper,
+    .defenders,
+    .forwards {
+        gap: 10px;
+    }
+    .midfielders {
+        gap: 30px;
+    }
+    .attackingMidfielders {
+        gap: 40px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .section-title {
+        padding-top: 250px;
+        text-align: center;
+    }
+    .section-title h2 i {
+        font-size: 38px;
+    }
+    .section-title .line {
+        width: 270px;
+        margin: 10px auto 0 auto;
+    }
+    .section-title .down {
+        font-size: 40px;
+    }
+    .information {
+        width: 100%;
+        padding: 70px 0;
+        border-radius: 0;
+        margin-top: 100px;
+        gap: 30px;
+    }
+    .trainer {
+        position: absolute;
+        left: 50px;
+        top: 20px;
+        padding: 5px;
+        background: var(--dark-black);
+        border-radius: 20px;
+        width: 130px;
+    }
+    .kompany {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 120px;
+    }
+    .trainer .name-trainer {
+        font-size: 12px;
+        margin-top: 7px;
+        color: var(--white);
+        text-align: center;
+    }
+    .player-card {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    .player-card:hover {
+        box-shadow: 0 0 5px 1px var(--primary-red);
+    }
+    .img-card {
+        width: 100%;
+        max-height: 90px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+    .name-card {
+        font-size: 16px;
+    }
+    .position-card {
+        display: none;
+    }
+    .number-card {
+        display: none;
+    }
+    .goalkeeper,
+    .defenders,
+    .forwards {
+        gap: 10px;
+    }
+    .midfielders {
+        gap: 30px;
+    }
+    .attackingMidfielders {
+        gap: 40px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .section-title {
+        padding-top: 250px;
+        text-align: center;
+    }
+    .section-title h2 i {
+        font-size: 40px;
+    }
+    .section-title .line {
+        width: 285px;
+        margin: 10px auto 0 auto;
+    }
+    .section-title .down {
+        font-size: 42px;
+    }
+    .player-card {
+        width: 200px;
+        border-radius: 10px;
+    }
+    .information {
+        margin-top: 100px;
+    }
+    .trainer {
+        position: absolute;
+        left: 50px;
+        top: 20px;
+        padding: 5px;
+        background: var(--dark-black);
+        border-radius: 20px;
+        width: 130px;
+    }
+    .kompany {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 120px;
+    }
+    .trainer .name-trainer {
+        font-size: 12px;
+        margin-top: 7px;
+        color: var(--white);
+        text-align: center;
+    }
+    .goalkeeper,
+    .defenders,
+    .midfielders,
+    .forwards,
+    .attackingMidfielders {
+        display: flex;
+        gap: 50px;
+    }
+}

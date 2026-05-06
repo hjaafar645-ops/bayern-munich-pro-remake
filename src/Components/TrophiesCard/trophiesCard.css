@@ -1,0 +1,786 @@
+/* Start-Trophies-Section */
+
+.trophies-section {
+    background-image: url(../../../public/Images/Curve\ Line2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.trophies-title {
+    padding-top: 250px;
+    padding-left: 110px;
+}
+
+.trophies-title h2 i {
+    font-size: 45px;
+    color: var(--white);
+}
+
+.trophies-title:after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: var(--primary-red);
+    margin-top: 10px;
+}
+
+
+/* Trophies-Cards */
+
+.trophies-content-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+}
+
+.major-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--light-gray);
+    width: 340px;
+    height: 350px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.major-cards:hover {
+    transform: translateY(-8px);
+}
+
+.trophies-img-card {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin: 15px 0 0 0;
+}
+
+.trophies-title-card {
+    color: var(--dark-black);
+    min-height: 4px;
+    padding: 20px 0;
+}
+
+.trophies-num-card {
+    font-size: 30px;
+    color: var(--dark-black);
+    font-weight: bold;
+}
+
+.trophies-btn-card {
+    width: 150px;
+    height: 45px;
+    background: var(--primary-red);
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+    padding: 5px;
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.major-cards:hover .trophies-btn-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Modal-Card */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 12px;
+    width: 650px;
+    height: 620px;
+    text-align: center;
+    margin: auto;
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.modal-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--primary-red);
+    transition: all 0.3s;
+}
+
+.modal-close:hover {
+    background-color: var(--dark-black);
+}
+
+.modal-close i {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-trophies-img-card {
+    width: 260px;
+    height: 260px;
+}
+
+.modal-trophies-title-card,
+.modal-trophies-num-card {
+    font-size: 30px;
+}
+
+.modal-trophies-num-card {
+    font-weight: 700;
+}
+
+.modal-trohies-first-card {
+    padding: 8px 0;
+}
+
+.modal-trophies-desc-card {
+    font-size: 22px;
+    font-weight: 700;
+    max-height: 166px;
+}
+
+.rippon {
+    position: absolute;
+    padding: 12px 10px;
+    top: 0;
+    left: 40px;
+    width: 90px;
+    height: 260px;
+    background: var(--primary-red);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.rippon:after,
+.rippon::before {
+    content: "";
+    position: absolute;
+    bottom: -36px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.rippon::before {
+    left: 0;
+    border-width: 0 0 38px 48px;
+    border-color: transparent transparent transparent var(--primary-red);
+}
+
+.rippon:after {
+    right: 0;
+    border-width: 0 48px 38px 0;
+    border-color: transparent var(--primary-red) transparent transparent;
+}
+
+.rippon i {
+    display: block;
+    margin-top: 20px;
+    font-size: 40px;
+    color: var(--light-gray);
+}
+
+
+/* Museum-Banner */
+
+.museum-banner {
+    background: var(--primary-red);
+    color: var(--light-gray);
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 10px auto 80px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.museum-banner .linear {
+    display: flex;
+    gap: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    width: max-content;
+    animation: text 16s linear infinite;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Museum */
+
+.museum-section {
+    position: relative;
+    border: 2px solid var(--primary-red);
+    width: 90%;
+    height: 780px;
+    margin: auto;
+    padding: 40px 10px;
+    border-radius: 20px;
+    background: var(--dark-black);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.9), -17px -20px 30px rgba(0, 0, 0, 0.7);
+}
+
+.museum-img {
+    display: block;
+    margin: auto;
+    width: 92%;
+    height: 700px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.museum-midea-img {
+    display: none;
+}
+
+
+/* Media */
+
+@media (max-width:576px) {
+    /* Start-Trophies-Section */
+    .trophies-title {
+        padding-top: 160px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .trophies-title h2 i {
+        font-size: 30px;
+    }
+    .trophies-title:after {
+        width: 120px;
+        margin: 10px auto;
+    }
+    /* Trophies-Cards */
+    .trophies-content-cards {
+        grid-template-columns: 1fr;
+        margin-top: 70px;
+    }
+    .major-cards {
+        width: 80%;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    .major-cards:hover {
+        transform: none;
+    }
+    .trophies-img-card {
+        width: 140px;
+        height: 140px;
+    }
+    .trophies-title-card {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .trophies-num-card {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .trophies-btn-card {
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    /* Modal-Card */
+    .modal-content-card {
+        width: 400px;
+        max-width: 90%;
+        height: auto;
+    }
+    .modal-close {
+        width: 30px;
+        height: 30px;
+        transition: none;
+    }
+    .modal-close i {
+        font-size: 16px;
+    }
+    .modal-trophies-img-card {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 8px;
+    }
+    .modal-trophies-title-card,
+    .modal-trophies-num-card {
+        font-size: 20px;
+    }
+    .modal-trophies-num-card {
+        font-weight: 700;
+    }
+    .modal-trohies-first-card {
+        font-size: 17px;
+    }
+    .modal-trophies-desc-card {
+        font-size: 14px;
+        font-weight: 700;
+        min-height: 166px;
+    }
+    .rippon {
+        left: 20px;
+        width: 55px;
+        height: 150px;
+    }
+    .rippon i {
+        font-size: 24px;
+    }
+    /* Museum-Banner */
+    .museum-banner {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+    .museum-banner .linear {
+        gap: 30px;
+        font-size: 20px;
+    }
+    /* Museum */
+    .museum-section {
+        height: 400px;
+    }
+    .mySwiperr {
+        display: none;
+    }
+    .museum-midea-img {
+        display: block;
+        margin: auto;
+        width: 92%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    /* Start-Trophies-Section */
+    .trophies-title {
+        padding-top: 170px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .trophies-title h2 i {
+        font-size: 32px;
+    }
+    .trophies-title:after {
+        width: 120px;
+        margin: 8px auto;
+    }
+    /* Trophies-Cards */
+    .trophies-content-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 70px;
+    }
+    .major-cards {
+        width: 85%;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    .major-cards:hover {
+        transform: none;
+    }
+    .trophies-img-card {
+        width: 155px;
+        height: 155px;
+    }
+    .trophies-title-card {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .trophies-num-card {
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .trophies-btn-card {
+        width: 110px;
+        height: 35px;
+        font-size: 16px;
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    /* Modal-Card */
+    .modal-content-card {
+        width: 450px;
+        height: auto;
+    }
+    .modal-close {
+        width: 30px;
+        height: 30px;
+        transition: none;
+    }
+    .modal-close i {
+        font-size: 16px;
+    }
+    .modal-trophies-img-card {
+        width: 175px;
+        height: 175px;
+        margin-bottom: 8px;
+    }
+    .modal-trophies-title-card,
+    .modal-trophies-num-card {
+        font-size: 24px;
+    }
+    .modal-trophies-num-card {
+        font-weight: 700;
+    }
+    .modal-trohies-first-card {
+        font-size: 20px;
+    }
+    .modal-trophies-desc-card {
+        font-size: 18px;
+        font-weight: 700;
+        min-height: 166px;
+    }
+    .rippon {
+        left: 30px;
+        width: 60px;
+        height: 170px;
+    }
+    .rippon i {
+        font-size: 26px;
+    }
+    /* Museum-Banner */
+    .museum-banner {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+    .museum-banner .linear {
+        gap: 30px;
+        font-size: 25px;
+    }
+    /* Museum */
+    .museum-section {
+        height: 450px;
+    }
+    .mySwiperr {
+        display: none;
+    }
+    .museum-midea-img {
+        display: block;
+        margin: auto;
+        width: 92%;
+        height: 370px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:767px) and (max-width:991px) {
+    /* Start-Trophies-Section */
+    .trophies-title {
+        padding-top: 180px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .trophies-title h2 i {
+        font-size: 35px;
+    }
+    .trophies-title:after {
+        width: 130px;
+        margin: 10px auto;
+    }
+    /* Trophies-Cards */
+    .trophies-content-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 70px;
+    }
+    .major-cards {
+        width: 88%;
+        height: 330px;
+        margin-bottom: 60px;
+    }
+    .major-cards:hover {
+        transform: none;
+    }
+    .trophies-img-card {
+        width: 165px;
+        height: 165px;
+        margin-top: 30px;
+    }
+    .trophies-title-card {
+        font-size: 23px;
+        padding-bottom: 30px;
+    }
+    .trophies-num-card {
+        font-size: 24px;
+    }
+    .trophies-btn-card {
+        width: 120px;
+        height: 35px;
+        font-size: 17px;
+    }
+    /* Modal-Card */
+    .modal-content-card {
+        width: 500px;
+        height: auto;
+    }
+    .modal-close {
+        width: 35px;
+        height: 35px;
+        transition: none;
+    }
+    .modal-close i {
+        font-size: 18px;
+    }
+    .modal-trophies-img-card {
+        width: 190px;
+        height: 190px;
+        margin-bottom: 8px;
+    }
+    .modal-trophies-title-card,
+    .modal-trophies-num-card {
+        font-size: 26px;
+    }
+    .modal-trophies-num-card {
+        font-weight: 700;
+    }
+    .modal-trohies-first-card {
+        font-size: 22px;
+    }
+    .modal-trophies-desc-card {
+        font-size: 19px;
+        font-weight: 700;
+        min-height: 166px;
+    }
+    .rippon {
+        left: 30px;
+        width: 70px;
+        height: 190px;
+    }
+    .rippon i {
+        font-size: 28px;
+    }
+    /* Museum-Banner */
+    .museum-banner {
+        width: 90%;
+        padding: 14px 0;
+        border-radius: 20px;
+    }
+    .museum-banner .linear {
+        gap: 30px;
+        font-size: 28px;
+    }
+    /* Museum */
+    .museum-section {
+        height: 520px;
+    }
+    .mySwiperr {
+        display: none;
+    }
+    .museum-midea-img {
+        display: block;
+        margin: auto;
+        width: 92%;
+        height: 440px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    /* Start-Trophies-Section */
+    .trophies-title {
+        padding-top: 220px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .trophies-title h2 i {
+        font-size: 38px;
+    }
+    .trophies-title:after {
+        width: 140px;
+        margin: 8px auto;
+    }
+    /* Trophies-Cards */
+    .trophies-content-cards {
+        margin-top: 70px;
+    }
+    .major-cards {
+        width: 88%;
+        height: 350px;
+        margin-bottom: 60px;
+    }
+    .major-cards:hover {
+        transform: none;
+    }
+    .trophies-img-card {
+        width: 175px;
+        height: 175px;
+        margin-top: 30px;
+    }
+    .trophies-title-card {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .trophies-num-card {
+        font-size: 26px;
+    }
+    .trophies-btn-card {
+        width: 125px;
+        height: 35px;
+        font-size: 18px;
+    }
+    /* Modal-Card */
+    .modal-content-card {
+        width: 550px;
+        height: auto;
+    }
+    .modal-close {
+        width: 35px;
+        height: 35px;
+        transition: none;
+    }
+    .modal-close i {
+        font-size: 18px;
+    }
+    .modal-trophies-img-card {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 8px;
+    }
+    .modal-trophies-title-card,
+    .modal-trophies-num-card {
+        font-size: 27px;
+    }
+    .modal-trophies-num-card {
+        font-weight: 700;
+    }
+    .modal-trohies-first-card {
+        font-size: 22px;
+    }
+    .modal-trophies-desc-card {
+        font-size: 20px;
+        font-weight: 700;
+        min-height: 166px;
+    }
+    .rippon {
+        left: 30px;
+        width: 75px;
+        height: 210px;
+    }
+    .rippon i {
+        font-size: 30px;
+    }
+    /* Museum-Banner */
+    .museum-banner {
+        width: 90%;
+        padding: 15px 0;
+        border-radius: 20px;
+    }
+    .museum-banner .linear {
+        gap: 30px;
+        font-size: 30px;
+    }
+    /* Museum */
+    .museum-section {
+        height: 530px;
+    }
+    .mySwiperr {
+        display: none;
+    }
+    .museum-midea-img {
+        display: block;
+        margin: auto;
+        width: 92%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .trophies-title {
+        padding-top: 220px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .trophies-title h2 i {
+        font-size: 40px;
+    }
+    .trophies-title:after {
+        width: 150px;
+        margin: 8px auto;
+    }
+    .modal-content-card {
+        width: 550px;
+        height: auto;
+    }
+    .modal-close {
+        width: 35px;
+        height: 35px;
+        transition: none;
+    }
+    .modal-close i {
+        font-size: 18px;
+    }
+    .modal-trophies-img-card {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 8px;
+    }
+    .modal-trophies-title-card,
+    .modal-trophies-num-card {
+        font-size: 27px;
+    }
+    .modal-trophies-num-card {
+        font-weight: 700;
+    }
+    .modal-trohies-first-card {
+        font-size: 22px;
+    }
+    .modal-trophies-desc-card {
+        font-size: 20px;
+        font-weight: 700;
+        min-height: 166px;
+    }
+    .rippon {
+        left: 30px;
+        width: 75px;
+        height: 210px;
+    }
+    .rippon i {
+        font-size: 30px;
+    }
+}
