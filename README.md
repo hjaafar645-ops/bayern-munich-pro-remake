@@ -18,7 +18,8 @@ improve structure, perfomance, and user experience with modern UI techniques and
 • Framer Motion (animation)
 • BootStrap (styling & icons)
 • CSS3 
-# Website Preview (Images/home-page.png)[Home]!
+# Website Preview 
+(public/Images/home-page.png)[Home]!
 # Purpose
 The goal of this project is to practice modern frontend development using React while building a visually engaging fan
 website for one the biggest football clubs in the world.
