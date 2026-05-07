@@ -19,7 +19,7 @@ improve structure, perfomance, and user experience with modern UI techniques and
 • BootStrap (styling & icons)
 • CSS3 
 # Website Preview 
-### 🏠 الصفحة الرئيسية | Home Page
+### 🏠 | Home Page
  "The landing page featuring a clean UI, showcasing the main services and key features of the platform."
 <img width="1877" height="918" alt="home-page" src="https://github.com/user-attachments/assets/2af75cd3-007e-4da8-afb0-4717240514b9" />
 
