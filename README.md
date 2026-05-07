@@ -20,8 +20,14 @@ improve structure, perfomance, and user experience with modern UI techniques and
 • CSS3 
 # Website Preview 
 ### 🏠 | Home Page
- "The landing page featuring a clean UI, showcasing the main services and key features of the platform."
 <img width="1877" height="918" alt="home-page" src="https://github.com/user-attachments/assets/2af75cd3-007e-4da8-afb0-4717240514b9" />
+ "The landing page featuring a clean UI, showcasing the main services and key features of the platform."
+### ⚽ | Matches Page
+<img width="1887" height="800" alt="matches-page" src="https://github.com/user-attachments/assets/c5a34cd1-d91f-4515-a840-2833b95d6c72" />
+*This page displays live and upcoming matches using interactive cards powered by **Swiper.js**. It features a smooth, continuous **loop slider** that allows users to swipe through match details, scores, and team logos effortlessly.*
+🏟️ Pitch View & Team Lineup
+<img width="1701" height="793" alt="players-page" src="https://github.com/user-attachments/assets/94f34bb1-a43e-471a-9232-90c345af2d8e" />
+*A creative "FIFA-style" football pitch layout featuring the **FC Bayern Munich** starting lineup. Each player is represented by an interactive card, positioned accurately on the field to mirror real-world tactical formations.*
 
 # Purpose
 The goal of this project is to practice modern frontend development using React while building a visually engaging fan
