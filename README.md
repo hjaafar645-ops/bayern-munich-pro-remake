@@ -38,4 +38,4 @@ website for one the biggest football clubs in the world.
 # 🚀 Live Demo
 https://chipper-malasada-61bd1a.netlify.app/
 
-### 👤 Designed and developed by : Jafar
+### 👤 Designed and developed by : JAFAR
