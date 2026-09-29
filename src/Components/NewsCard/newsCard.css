@@ -163,13 +163,15 @@
 }
 
 .news-card-content {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     padding: 10px;
     box-shadow: 1px 1px 10px 1px var(--primary-red);
     border-radius: 10px;
     background: #000;
     text-align: center;
 }
+
 
 .img-zoom {
     overflow: hidden;
@@ -357,7 +359,7 @@
     }
 
     .news-title:after {
-        margin: 0 auto ;
+        margin: 0 auto;
         width: 87px;
     }
 

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 import "../Navbar/navbar.css"
 function Navbar() {
-
     const [searchTerm, setSearchTerm] = useState("");
     const navigate = useNavigate();
     const handleSearch = (e) => {

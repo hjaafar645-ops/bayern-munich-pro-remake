@@ -152,9 +152,8 @@
 
 .match-liga-card {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-265%, -293%);
+    top: 0px; 
+    left: -1px;   
 }
 
 .liga {
